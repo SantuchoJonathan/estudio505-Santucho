@@ -150,7 +150,7 @@ main {
     font-weight: bold;
     font-size: 1.25em;
     color: white;
-    background-image: url("./imagenes/fondo_servicios.jpg");
+    background-image: url("../imagenes/fondo_servicios.jpg");
     background-repeat: repeat;
     background-size: cover;
     border: solid rgb(255, 246, 246);
