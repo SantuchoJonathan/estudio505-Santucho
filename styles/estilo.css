@@ -27,7 +27,7 @@ header {
 }
 
 .logo_contacto {
-    background-color: black;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
     min-height: 2.37em;
     max-height: max-content;
     text-decoration: none;
@@ -54,23 +54,45 @@ header {
     padding: 0cm;
     margin: 5px 0px 5px 0px;
     border-radius: 0.625em;
-    animation-duration: 5s;
     animation-name: aparecer;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    /*animation-delay: -1s;*/
+
 }
 
 @keyframes aparecer {
+
     0% {
-        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    10% {
+        transform: rotateZ(15deg);
+    }
+
+    15% {
+        transform: rotateZ(10deg);
+    }
+
+    30% {
+        transform: rotateZ(0deg);
+    }
+
+    40% {
+        transform: rotateZ(-10deg);
     }
 
     50% {
-        opacity: 0.5;
+        transform: rotateZ(-15deg);
     }
 
-    100% {
-        opacity: 1;
+    60% {
+        transform: rotateZ(360deg);
     }
+
+ 
 }
 
 .barra_navegacion_superior {
@@ -79,23 +101,25 @@ header {
 
 .barra_navegacion_superior ul {
     margin-top: 0cm;
-    background-color: black;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
+
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 
 .barra_navegacion_superior ul li a {
     text-decoration: none;
     color: white;
     line-height: 2.37em;
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_superior ul li a:hover {
-    background-color: #babd03d3;
+    background-color: #babd03ab;
     color: aliceblue;
-    padding: 0.625em;
 }
 
 main {
@@ -171,6 +195,7 @@ main {
     width: 50%;
     height: 10cm;
     border-radius: 10px;
+
 }
 
 .diseño_grafico h2,
@@ -235,7 +260,7 @@ footer {
 }
 
 .contacto {
-    background-color: #000000c7;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
     border-top: solid white;
     height: 1cm;
     color: white;
@@ -342,8 +367,9 @@ footer {
 }
 
 .galeria_fotos img:hover {
+    transform: scale(1.2, 1);
     all: 10ms;
-    filter: contrast(80%);
+    filter: contrast(70%);
 }
 
 /*PAGINA QUIENES SOMOS*/
