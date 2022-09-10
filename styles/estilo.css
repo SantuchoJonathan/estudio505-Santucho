@@ -20,6 +20,7 @@ body {
 
 header {
     grid-area: cabecera;
+    
 }
 
 .titulo_pagina_principal {
@@ -56,10 +57,8 @@ header {
     border-radius: 0.625em;
     animation-name: aparecer;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 10s;
-    /*animation-delay: -1s;*/
-
+    animation-timing-function: linear;
+    animation-duration: 1s;
 }
 
 @keyframes aparecer {
@@ -87,12 +86,6 @@ header {
     50% {
         transform: rotateZ(-15deg);
     }
-
-    60% {
-        transform: rotateZ(360deg);
-    }
-
- 
 }
 
 .barra_navegacion_superior {
@@ -102,12 +95,10 @@ header {
 .barra_navegacion_superior ul {
     margin-top: 0cm;
     background-image: linear-gradient(black, rgb(37, 39, 9));
-
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 
 .barra_navegacion_superior ul li a {
@@ -174,10 +165,10 @@ main {
     font-weight: bold;
     font-size: 1.25em;
     color: white;
-    background-image: url("./imagenes/fondo_servicios.jpg");
+    background-image: url("../imagenes/fondo_servicios.jpg");
     background-repeat: repeat;
     background-size: cover;
-    border: solid rgb(255, 246, 246);
+    border: 1px solid rgb(255, 246, 246);
     border-radius: 10px;
     margin: 10px auto;
     width: 95%;
@@ -195,7 +186,6 @@ main {
     width: 50%;
     height: 10cm;
     border-radius: 10px;
-
 }
 
 .diseño_grafico h2,
@@ -222,6 +212,7 @@ main {
     height: 10cm;
     border-radius: 10px;
 }
+
 
 .clientes {
     min-height: 5.7cm;
@@ -290,18 +281,19 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_inferior ul li a {
     text-decoration: none;
     color: white;
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_inferior a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(251, 255, 6);
-    border-radius: 1cm;
-    padding: 0.5cm;
+    background-color: #babd03ab;
 }
 
 .copryght {
@@ -367,10 +359,24 @@ footer {
 }
 
 .galeria_fotos img:hover {
-    transform: scale(1.2, 1);
+  /*  transform: scale(1.2, 1);
     all: 10ms;
-    filter: contrast(70%);
+    filter: contrast(70%);*/
+    animation-name: aparecer1;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    border-radius: 90%;
+    transition:all, 2s;
 }
+
+@keyframes aparecer1 {
+
+     100% {transform: rotateZ(360deg);}
+  
+
+}
+
 
 /*PAGINA QUIENES SOMOS*/
 
@@ -458,6 +464,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0.60rem 4rem 0.60rem 4rem;
     }
 
 
@@ -467,8 +474,13 @@ button:hover {
 
     .presentacion_servicios a {
         padding: 10px;
+        text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243)
     }
 
+    .presentacion_servicios p,
+    .presentacion_servicios h2 {
+        text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243)
+    }
 
     .impresion_en_general_contenido {
         flex-direction: column-reverse;
@@ -573,15 +585,14 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 96.1%;
+        height: 46.5%;
         width: 100%;
         align-items: center;
     }
 
-    .barra_navegacion_superior li a:hover {
-        background-color: #c2c51f;
+    .barra_navegacion_inferior {
+        display: none;
     }
-
 
     .logo_contacto span {
         display: none;
