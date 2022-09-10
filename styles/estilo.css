@@ -20,6 +20,7 @@ body {
 
 header {
     grid-area: cabecera;
+    
 }
 
 .titulo_pagina_principal {
@@ -27,7 +28,7 @@ header {
 }
 
 .logo_contacto {
-    background-color: black;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
     min-height: 2.37em;
     max-height: max-content;
     text-decoration: none;
@@ -54,22 +55,36 @@ header {
     padding: 0cm;
     margin: 5px 0px 5px 0px;
     border-radius: 0.625em;
-    animation-duration: 5s;
     animation-name: aparecer;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
 }
 
 @keyframes aparecer {
+
     0% {
-        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    10% {
+        transform: rotateZ(15deg);
+    }
+
+    15% {
+        transform: rotateZ(10deg);
+    }
+
+    30% {
+        transform: rotateZ(0deg);
+    }
+
+    40% {
+        transform: rotateZ(-10deg);
     }
 
     50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
+        transform: rotateZ(-15deg);
     }
 }
 
@@ -79,7 +94,7 @@ header {
 
 .barra_navegacion_superior ul {
     margin-top: 0cm;
-    background-color: black;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -90,12 +105,12 @@ header {
     text-decoration: none;
     color: white;
     line-height: 2.37em;
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_superior ul li a:hover {
-    background-color: #babd03d3;
+    background-color: #babd03ab;
     color: aliceblue;
-    padding: 0.625em;
 }
 
 main {
@@ -153,7 +168,7 @@ main {
     background-image: url("../imagenes/fondo_servicios.jpg");
     background-repeat: repeat;
     background-size: cover;
-    border: solid rgb(255, 246, 246);
+    border: 1px solid rgb(255, 246, 246);
     border-radius: 10px;
     margin: 10px auto;
     width: 95%;
@@ -198,6 +213,7 @@ main {
     border-radius: 10px;
 }
 
+
 .clientes {
     min-height: 5.7cm;
 }
@@ -235,7 +251,7 @@ footer {
 }
 
 .contacto {
-    background-color: #000000c7;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
     border-top: solid white;
     height: 1cm;
     color: white;
@@ -265,18 +281,19 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-image: linear-gradient(black, rgb(37, 39, 9));
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_inferior ul li a {
     text-decoration: none;
     color: white;
+    padding: 0.60rem 4rem 0.60rem 4rem;
 }
 
 .barra_navegacion_inferior a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(251, 255, 6);
-    border-radius: 1cm;
-    padding: 0.5cm;
+    background-color: #babd03ab;
 }
 
 .copryght {
@@ -342,9 +359,24 @@ footer {
 }
 
 .galeria_fotos img:hover {
+  /*  transform: scale(1.2, 1);
     all: 10ms;
-    filter: contrast(80%);
+    filter: contrast(70%);*/
+    animation-name: aparecer1;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    border-radius: 90%;
+    transition:all, 2s;
 }
+
+@keyframes aparecer1 {
+
+     100% {transform: rotateZ(360deg);}
+  
+
+}
+
 
 /*PAGINA QUIENES SOMOS*/
 
@@ -432,6 +464,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0.60rem 4rem 0.60rem 4rem;
     }
 
 
@@ -441,8 +474,13 @@ button:hover {
 
     .presentacion_servicios a {
         padding: 10px;
+        text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243)
     }
 
+    .presentacion_servicios p,
+    .presentacion_servicios h2 {
+        text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243)
+    }
 
     .impresion_en_general_contenido {
         flex-direction: column-reverse;
@@ -547,15 +585,14 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 96.1%;
+        height: 46.5%;
         width: 100%;
         align-items: center;
     }
 
-    .barra_navegacion_superior li a:hover {
-        background-color: #c2c51f;
+    .barra_navegacion_inferior {
+        display: none;
     }
-
 
     .logo_contacto span {
         display: none;
