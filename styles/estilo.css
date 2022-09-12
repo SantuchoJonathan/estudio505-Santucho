@@ -3,8 +3,44 @@
     padding: 0;
 }
 
+main {
+    margin-top: 0.5rem;
+}
 
-body {
+
+
+.carousel-item img {
+    margin-top: 4.3rem;
+    width: 10rem;
+    height: 35rem;
+    margin: auto;
+}
+
+
+.logo_clientes img {
+    border-radius: 10px;
+    width: 4cm;
+    height: 2cm;
+}
+
+main{
+    margin-top: 2.2cm;
+}
+
+.imagenesvarias img {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+
+}
+
+.imagenesvarias img:hover{
+    border: solid 5px rgb(253, 252, 251);
+}
+
+
+
+/* body {
     font-family: 'DynaPuff', cursive;
     background-image: url("../imagenes/fondo2.jpg");
     background-repeat: repeat;
@@ -23,9 +59,7 @@ header {
     
 }
 
-.titulo_pagina_principal {
-    display: none;
-}
+
 
 .logo_contacto {
     background-image: linear-gradient(black, rgb(37, 39, 9));
@@ -307,7 +341,7 @@ footer {
     justify-content: space-between;
 }
 
-/*PAGINA SERVICIOS*/
+/*PAGINA SERVICIOS
 
 .servicios {
     font-family: 'Times New Roman', Times, serif;
@@ -337,7 +371,7 @@ footer {
     margin: 10px 0px 10px 0px;
 }
 
-/*PAGINA GALERIA*/
+/*PAGINA GALERIA
 
 
 .galeria img {
@@ -359,9 +393,6 @@ footer {
 }
 
 .galeria_fotos img:hover {
-  /*  transform: scale(1.2, 1);
-    all: 10ms;
-    filter: contrast(70%);*/
     animation-name: aparecer1;
     animation-iteration-count: 1;
     animation-timing-function: linear;
@@ -378,7 +409,7 @@ footer {
 }
 
 
-/*PAGINA QUIENES SOMOS*/
+/*PAGINA QUIENES SOMOS
 
 .quienes_somos {
     font-family: 'Times New Roman', Times, serif;
@@ -387,7 +418,7 @@ footer {
     text-align: justify;
 }
 
-/*PAGINA CONTACTO*/
+/*PAGINA CONTACTO
 
 .formulario h2 {
     text-align: center;
@@ -631,4 +662,4 @@ button:hover {
         text-align: justify;
         margin-left: 1cm;
     }
-}
+} */
