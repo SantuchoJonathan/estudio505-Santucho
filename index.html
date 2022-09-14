@@ -20,7 +20,7 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark ">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./imagenes/logo.jpeg" width="50px"
                         alt="logo de sitio web"></a>
@@ -74,9 +74,12 @@
 
     <main>
 
-        <section class="container-fluid text-left text-center text-bg-dark p-1 mb-2">
-            <h2>Estudio 505. Diseños Graficos</h2>
-        </section>
+        <div class="titulo_principal">
+
+            <section class="container-fluid text-left text-center  p-2 text-dark bg-opacity-75 p-1 mb-2">
+                <h2>Estudio 505. Diseños Graficos</h2>
+            </section>
+        </div>
 
         <div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -118,7 +121,6 @@
                     <div class="presentacion_servicios">
                         <h2 class="position-absolute bottom-50 start-50 translate-middle-x text-dark p-2">
                             Presentacion de algunos servicios.</h2>
-
                         <p class="position-absolute top-50 start-50 translate-middle-x text-dark p-2"> Comunicate
                             por los siguientes medios:
                             <a class="text-dark" href="mailto:estudio.505.cba@gmail.com"><i
@@ -128,8 +130,8 @@
                             <a class="text-dark" href="https://www.instagram.com/estudio505.cba/" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
                         </p>
-                        <img class="img-fluid" src="./imagenes/trabajo.jpg" width="100%" height="400px" alt="">
-
+                        <img class="img-fluid" src="./imagenes/trabajo.jpg" width="100%"
+                            alt="Imagen de impresiones fotograficas">
                     </div>
                 </div>
             </div>
@@ -139,23 +141,26 @@
             <div class="row">
 
                 <div class="col-md-6 mx-auto border-dark">
-                    <img class="img-fluid rounded" src="./imagenes/impresora2.jpg" alt="Impresora" width="60%"
-                        height="300rem">
-                    <h3>Impresiones.</h3>
-                    <p>
-                        Excelente calidad de imagen. <br>
-                        Velocidad. Agilizamos tus tiempos. <br>
-                        Personalizacion.
-                    </p>
+                    <article class="impresiones">
+                        <img class="img-fluid rounded" src="./imagenes/impresora2.jpg" alt="Impresora" width="60%"
+                            height="300rem">
+                        <h3>Impresiones.</h3>
+                        <p>
+                            Excelente calidad de imagen. <br>
+                            Velocidad. Agilizamos tus tiempos. <br>
+                            Personalizacion.
+                        </p>
+                    </article>
                 </div>
 
                 <div class="col-md-6 mx-auto border-dark">
-                    <img class="img-fluid rounded" src="./imagenes/diseñografico.jpg" alt="Imagen sobre diseño"
-                        width="60%" height="300rem">
-                    <h3>Diseño Grafico.</h3>
-                    <p> Planteanos tu idea, nosotros la diseñamos.</p>
+                    <article class="diseño_grafico">
+                        <img class="img-fluid rounded" src="./imagenes/diseñografico.jpg" alt="Imagen sobre diseño"
+                            width="60%" height="300rem">
+                        <h3>Diseño Grafico.</h3>
+                        <p> Planteanos tu idea, nosotros la diseñamos.</p>
+                    </article>
                 </div>
-
             </div>
         </div>
 
