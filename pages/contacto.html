@@ -9,105 +9,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./imagenes/logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenes/logo.jpeg" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/estilo.css">
-    <title>Estudio 505-Contacto</title>
+    <title>Estudio 505 - Contacto</title>
 </head>
 
 <body>
+
     <header>
-        <div class="titulo_pagina_principal">
-            <h1>estudio 505 - Imprenta y diseño grafico</h1>
-        </div>
-        <div class="logo_contacto">
-            <a href="https://goo.gl/maps/WnJQo91YFH1AL5t46" target="_blank"><i class="fa-regular fa-map"></i>
-                <span>Duarte
-                    Quiros 10 Loc. 6</span></a>
-            <a href="mailto:estudio.505.cba@gmail.com"><i class="fa-regular fa-envelope"></i><span>
-                    estudio.505.cba@gmail.com</span></a>
-            <a href=//wa.me/+5493516874546?text=Buenas,%20quiero%20asesoramiento.. target="_blank"><i
-                    class="fa-brands fa-whatsapp"></i><span>351-6874546</span></a>
-            <a href="https://www.instagram.com/estudio505.cba/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i><span>
-                    estudio.505.cba</span></a>
-        </div>
-        <section class="logo_sitio_web">
-            <a href="../index.html"> <img src="../imagenes/logo.jpeg" alt="logo de sitio web"></a>
-        </section>
-
-    </header>
-    <nav class="barra_navegacion_superior">
-        <ul>
-            <li><a href="../index.html"> Inicio</a></li>
-            <li><a href="./servicios.html"> Servicios</a></li>
-            <li><a href="./galeria.html"> Galeria</a></li>
-            <li><a href="./quienes_somos.html"> Nosotros</a></li>
-            <li><a href="./contacto.html"> Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="titulo_pagina">
-            <h2>CONTACTO | Estamos dispuesto a brindarte una solucion.</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.4062520013536!2d-64.18679871001369!3d-31.41929153373149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2848d207627%3A0x59bada02d6a0806a!2sAv.%20Duarte%20Quir%C3%B3s%2010%2C%20X5022%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1660288936123!5m2!1ses!2sar"
-                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
-        </section>
-        <section class="formulario">
-            <h2>Envianos un mensaje y pronto nos pondremos en contacto contigo.</h2>
-            <form class="datos">
-                <label class="identificacion" for="nombre">Nombre</label><br>
-                <input id="nombre" type="text" placeholder="Nombre"><br>
-                <label class="identificacion" for="email">E-mail</label><br>
-                <input id="email" type="email" placeholder="E-mail"><br>
-                <label class="identificacion" for="asunto">Asunto</label><br>
-                <input id="asunto" type="text" placeholder="Asunto"><br>
-                <label class="identificacion" for="mensaje">Mensaje</label><br>
-                <textarea name="mensaje" placeholder="Ingrese su comentario aqui.." id="mensaje" cols="21"
-                    rows="5"></textarea><br>
-                <button>Enviar</button>
-            </form>
-        </section>
-        <section class="formasdepago">
-            <h3>Formas de pago:</h3>
-            <ol>
-                <li>Contado Efectivo</li>
-                <li>Transferencia</li>
-                <li>Tarjeta de Debito</li>
-                <li>Tarjeta de Credito</li>
-            </ol>
-        </section>
-    </main>
-    <footer>
-        <section class="contacto">
-            <h2>CONTACTO</h2>
-            <article class="logopie">
-                <a href="https://goo.gl/maps/WnJQo91YFH1AL5t46" target="_blank"><i class="fa-regular fa-map"></i></a>
-                <a href="mailto:estudio.505.cba@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                <a href=//wa.me/+5493516874546?text=Buenas,%20quiero%20asesoramiento.. target="_blank"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/estudio505.cba/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-            </article>
-        </section>
-        <nav class="barra_navegacion_inferior">
-            <ul>
-                <li><a href="../index.html"> Inicio</a></li>
-                <li><a href="./servicios.html"> Servicios</a></li>
-                <li><a href="./galeria.html"> Galeria</a></li>
-                <li><a href="./quienes_somos.html"> Nosotros</a></li>
-                <li><a href="./contacto.html"> Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo.jpeg" width="50px"
+                        alt="logo de sitio web"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes_somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown  active btn btn-secondary" aria-current="page">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contacto</a>
+                            <ul class="dropdown-menu bg-secondary" style="margin-right: 0rem; ">
+                                <li><a class="dropdown-item" href="./contacto.html">Contactenos</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item"
+                                        href=//wa.me/+5493516874546?text=Buenas,%20quiero%20asesoramiento..
+                                        target="_blank">Whattsap</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="mailto:estudio.505.cba@gmail.com">E-mail</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/estudio505.cba/"
+                                        target="_blank">Instagram</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="https://goo.gl/maps/WnJQo91YFH1AL5t46"
+                                        target="_blank">¿Donde nos ubicamos?</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <article class="direccion_horario">
-            <p> Direccion: Av. Duarte Quiros 10 Local 6, Centro. <br> <br>
-                Horario: Lun. a Vier. 9 a 13 - 14 a 18 hs. Sab. 10 a 13 hs.</p>
-        </article>
-        <div class="copryght">
-            <h3> ©2022 Estudio 505. Derechos reservados.</h3>
+    </header>
+
+    <main>
+        <section class="galeria text-center bg-dark text-white py-1">
+            <h2>CONTACTO | Estamos dispuesto a brindarte una solucion.</h2>
+        </section>
+
+        <iframe class="container-fluid mt-2"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.4062520013536!2d-64.18679871001369!3d-31.41929153373149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2848d207627%3A0x59bada02d6a0806a!2sAv.%20Duarte%20Quir%C3%B3s%2010%2C%20X5022%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1660288936123!5m2!1ses!2sar"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <div class="container-fluid ">
+            <div class="row mx-xl-5">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="contacto_datos">
+                        <h2 class="mt-4 text-decoration-underline">Estudio 505. Diseños Graficos.</h2>
+                        <p> <span class="contacto_importante">Direccion:</span> Av. Duarte Quiros 10 Loc 6 - Bº Centro
+                            <br>
+                            <span class="contacto_importante">Telefono:</span> 351-6874546 <br>
+                            <span class="contacto_importante">E-mail:</span> estudio.505.cba@gmail.com<br>
+                            <span class="contacto_importante">Horarios:</span> Lun. a vie. 09:00 a 13:00 y 14:00 a 18:00
+                            hs - Sábados: 10:00 a 13:00 Hs.
+                        </p>
+                        <p class="contacto_texto">Comunicate con nosotros a traves de nuestros canales de comunicacion,
+                            via Whattsap, Instagram
+                            o
+                            correo electronico,
+                            o bien, completá los datos del formulario y nosotros nos encargaremos de comunicarte. <br>
+                            Para una atencion mas personalizada,
+                            te esperamos en el local.</p>
+                        <p><span class="contacto_importante">Formas de pagos:</span> Contado Efectivo / Transferencia / Tarjeta de debito y/o Credito.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-xl-6 col-lg-12 my-1 text-center">
+                    <form>
+                        <fieldset>
+                            <legend> <h2>Envianos un mensaje y pronto nos pondremos en contacto contigo</h2></legend>
+                            <div class="mb-3">
+                                <label class="identificacion" for="nombre">Nombre</label>
+                                <input id="nombre" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="identificacion" for="email">E-mail</label>
+                                <input id="email" type="email" placeholder="E-mail" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="identificacion" for="asunto">Asunto</label>
+                                <input id="asunto" type="text" placeholder="Asunto" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="identificacion" for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" placeholder="Ingrese su comentario aqui.." id="mensaje"
+                                    cols="21" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Deseo recibir
+                                        promociones</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
 
+
+
+
+    </main>
+
+    <footer>
+        <div class="container-fluid text-left m-auto text-center text-bg-dark p-3 ">
+            <div class="row">
+                <div class="col-6 text-right my-auto">
+                    <h2>CONTACTO</h2>
+                </div>
+                <div class="col-6 my-2">
+                    <a class="px-1 text-white" href="https://goo.gl/maps/WnJQo91YFH1AL5t46" target="_blank"><i
+                            class="fa-regular fa-map"></i></a>
+                    <a class="px-1 text-white" href="mailto:estudio.505.cba@gmail.com"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a class="px-1 text-white" href=//wa.me/+5493516874546?text=Buenas,%20quiero%20asesoramiento..
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="px-1 text-white" href="https://www.instagram.com/estudio505.cba/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-left m-auto text-bg-dark p-3 mt-1">
+            <div class="row">
+                <div class="col">
+                    <article class="direccion_horario">
+                        <p> Direccion: Av. Duarte Quiros 10 Local 6, Centro. <br> <br>
+                            Horario: Lun. a Vier. 9 a 13 - 14 a 18 hs. Sab. 10 a 13 hs.</p>
+                    </article>
+                    <div class="copryght">
+                        <h5> ©2022 Estudio 505. Derechos reservados.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
