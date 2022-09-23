@@ -15,6 +15,23 @@ main {
   margin-top: 2.2cm;
 }
 
+.inicio {
+  display: flex;
+}
+
+.carousel {
+  margin-left: 5px;
+  width: 110%;
+  box-shadow: 0px 10px 25px;
+  height: 500px;
+  border-radius: 20%;
+}
+.carousel img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20%;
+}
+
 .logo_clientes img {
   border-radius: 10px;
   width: 4cm;
@@ -61,11 +78,35 @@ h4 {
   }
 }
 
-.presentacion_servicios p,
+.presentacion_servicios {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.24), rgba(255, 255, 0, 0.151));
+  width: 100%;
+  margin-top: 16%;
+  margin-right: 10px;
+  padding-left: 60px;
+  box-shadow: 0px 0px 25px;
+  border-radius: 10px;
+}
 .presentacion_servicios h2 {
   font-size: 2em;
+  width: 100%;
+  margin: 0% auto 0% auto;
+  text-align: center;
+  margin: 20px 0px;
+}
+.presentacion_servicios p {
+  font-size: 1.6em;
   width: 90%;
-  text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243);
+  margin: 0% auto 0% auto;
+  text-align: justify;
+}
+.presentacion_servicios .comunicate {
+  text-align: start;
+  margin: 10px 0px;
+  width: 100%;
+}
+.presentacion_servicios i {
+  color: black;
 }
 
 .impresiones img,
@@ -160,7 +201,6 @@ h4 {
   padding: 15px;
   box-shadow: 0px 15px 25px;
 }
-
 .galeria_fotos img:hover {
   border: solid 5px rgb(253, 252, 251);
   cursor: pointer;
@@ -183,6 +223,10 @@ h4 {
   text-align: start;
 }
 
+.copryght h5 {
+  font-size: small;
+}
+
 @media screen and (max-width: 400px) {
   .presentacion_servicios h2,
 .contacto_datos,
@@ -193,19 +237,70 @@ h2 {
 .presentacion_servicios p {
     font-size: 13px;
   }
+  .inicio {
+    flex-direction: column;
+  }
+  .carousel {
+    margin: auto;
+    width: 100%;
+    box-shadow: 0px 0px 15px;
+    height: 300px;
+  }
+  .carousel img {
+    width: 100%;
+    height: 300px;
+  }
+  .presentacion_servicios {
+    margin-right: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+  }
+  .presentacion_servicios .comunicate {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 401px) and (max-width: 650px) {
   .presentacion_servicios h2,
 .presentacion_servicios a,
 .presentacion_servicios p,
 .contacto_datos {
-    font-size: 17px;
+    font-size: 13px;
+  }
+  .presentacion_servicios {
+    width: 100%;
+    margin-top: 10%;
+    text-align: start;
+    padding-left: 10px;
+  }
+  .presentacion_servicios h2 {
+    text-align: start;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .presentacion_servicios p {
+    text-align: center;
+    width: 100%;
+  }
+  .presentacion_servicios .comunicate {
+    text-align: start;
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    height: 250px;
+  }
+  .carousel img {
+    width: 100%;
+    height: 250px;
   }
 }
 @media screen and (min-width: 651px) and (max-width: 1000px) {
   .presentacion_servicios h2,
 .presentacion_servicios a,
 .presentacion_servicios p {
-    font-size: 25px;
+    font-size: 1.3em;
+  }
+  .presentacion_servicios .comunicate {
+    text-align: center;
   }
 }/*# sourceMappingURL=estilo.css.map */
