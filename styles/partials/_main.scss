@@ -2,6 +2,28 @@ main {
     margin-top: 5px;
 }
 
+.servicios {
+    h4 {
+        font-family: map-get($font, font_titulo_servicios);
+        text-decoration: underline;
+    }
+}
+
+.impresiones,
+.diseño_grafico {
+    @include animation (animar1, 0s);
+
+    @keyframes animar1 {
+        0% {
+            transform: scale(0.6, 0.6);
+        }
+
+        50% {
+            transform: scale(1, 1);
+        }
+    }
+}
+
 .clientes {
     background-color: rgba(128, 128, 128, 0.37);
     min-height: 8em;
@@ -18,35 +40,36 @@ main {
     }
 }
 
-.servicios {
-    h4 {
-        font-family: map-get($font, font_titulo_servicios);
-        text-decoration: underline;
-    }
-}
+.logoWp_contacto {
 
-.impresiones {
-    @include animation (animar3);
+    i {
+        position: fixed;
+        bottom: 7%;
+        right: 1%;
+        font-size: 3em;
+        color: white;
+        background-color: rgb(73, 199, 42);
+        border-radius: 12px;
+        padding: 3px 10px;
 
-    @keyframes animar3 {
-        0% {
-            transform: translateX(-50px);
-        }
-    }
-}
+        @include animation_index;
 
-.diseño_grafico {
-    @include animation (animar4);
+        @keyframes wp {
+            50% {
+                transform: scale(1.1, 1.1);
+                background-color: rgb(48, 158, 21);
+            }
 
-    @keyframes animar4 {
-        0% {
-            transform: translateX(50px);
+            50% {
+                transform: scale(1.1, 1.1);
+            }
         }
     }
 }
 
 .articulo_servicio img {
-    @include animation (animar);
+    @include animation (animar, 1s);
+    transition: all 2s;
 
     @keyframes animar {
         0% {
@@ -58,7 +81,7 @@ main {
 .articulo_servicio h4,
 .articulo_servicio p,
 .articulo_servicio li {
-    @include animation (animar2);
+    @include animation (animar2, 0s);
 
     @keyframes animar2 {
         0% {

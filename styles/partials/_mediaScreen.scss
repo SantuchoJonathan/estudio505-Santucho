@@ -4,10 +4,6 @@
         font-size: 80%;
     }
 
-    .contacto_datos{
-        font-size: 15px;
-    }
-
     .carousel {
         margin: auto;
         width: 100%;
@@ -26,15 +22,20 @@
             font-size: 0.8rem;
         }
     }
+
+    .contacto_datos {
+        font-size: 15px;
+    }
+
+    .logoWp_contacto {
+
+        i {
+            font-size: 2em;
+        }
+    }
 }
 
 @media screen and (min-width:401px) and (max-width:1000px) {
-
-    .redes {
-        i {
-            font-size: 1.0rem;
-        }
-    }
 
     .carousel {
         width: 90%;
@@ -44,11 +45,23 @@
         }
     }
 
+    span {
+        display: none;
+    }
+
+    .redes {
+        i {
+            font-size: 1.0rem;
+        }
+    }
+
     .contacto_datos {
         font-size: 13px;
     }
 
-    span {
-        display: none;
+    .logoWp_contacto {
+        i {
+            font-size: 2.1em;
+        }
     }
 }

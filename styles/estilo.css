@@ -73,6 +73,39 @@ main {
   margin-top: 5px;
 }
 
+.servicios h4 {
+  font-family: "Aref Ruqaa Ink", serif;
+  text-decoration: underline;
+}
+
+.impresiones,
+.diseño_grafico {
+  -webkit-animation-name: animar1;
+          animation-name: animar1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+@-webkit-keyframes animar1 {
+  0% {
+    transform: scale(0.6, 0.6);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes animar1 {
+  0% {
+    transform: scale(0.6, 0.6);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+
 .clientes {
   background-color: rgba(128, 128, 128, 0.37);
   min-height: 8em;
@@ -84,62 +117,55 @@ main {
   padding-bottom: 10px;
 }
 
-.servicios h4 {
-  font-family: "Aref Ruqaa Ink", serif;
-  text-decoration: underline;
-}
-
-.impresiones {
-  -webkit-animation-name: animar3;
-          animation-name: animar3;
+.logoWp_contacto i {
+  position: fixed;
+  bottom: 7%;
+  right: 1%;
+  font-size: 3em;
+  color: white;
+  background-color: rgb(73, 199, 42);
+  border-radius: 12px;
+  padding: 3px 10px;
+  -webkit-animation-name: wp;
+          animation-name: wp;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: in;
+          animation-timing-function: in;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
-@-webkit-keyframes animar3 {
-  0% {
-    transform: translateX(-50px);
+@-webkit-keyframes wp {
+  50% {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(48, 158, 21);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
   }
 }
-@keyframes animar3 {
-  0% {
-    transform: translateX(-50px);
+@keyframes wp {
+  50% {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(48, 158, 21);
   }
-}
-
-.diseño_grafico {
-  -webkit-animation-name: animar4;
-          animation-name: animar4;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-@-webkit-keyframes animar4 {
-  0% {
-    transform: translateX(50px);
-  }
-}
-@keyframes animar4 {
-  0% {
-    transform: translateX(50px);
+  50% {
+    transform: scale(1.1, 1.1);
   }
 }
 
 .articulo_servicio img {
   -webkit-animation-name: animar;
           animation-name: animar;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 2s;
 }
 @-webkit-keyframes animar {
   0% {
@@ -157,8 +183,8 @@ main {
 .articulo_servicio li {
   -webkit-animation-name: animar2;
           animation-name: animar2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-delay: 0s;
@@ -208,9 +234,6 @@ form .form_campo {
   body {
     font-size: 80%;
   }
-  .contacto_datos {
-    font-size: 15px;
-  }
   .carousel {
     margin: auto;
     width: 100%;
@@ -224,21 +247,30 @@ form .form_campo {
   .redes i {
     font-size: 0.8rem;
   }
+  .contacto_datos {
+    font-size: 15px;
+  }
+  .logoWp_contacto i {
+    font-size: 2em;
+  }
 }
 @media screen and (min-width: 401px) and (max-width: 1000px) {
-  .redes i {
-    font-size: 1rem;
-  }
   .carousel {
     width: 90%;
   }
   .carousel img.d-block {
     height: 300px;
   }
+  span {
+    display: none;
+  }
+  .redes i {
+    font-size: 1rem;
+  }
   .contacto_datos {
     font-size: 13px;
   }
-  span {
-    display: none;
+  .logoWp_contacto i {
+    font-size: 2.1em;
   }
 }/*# sourceMappingURL=estilo.css.map */
