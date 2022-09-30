@@ -68,7 +68,7 @@ main {
 }
 
 .articulo_servicio img {
-    @include animation (animar, 1s);
+    @include animation (animar, 0s);
     transition: all 2s;
 
     @keyframes animar {
