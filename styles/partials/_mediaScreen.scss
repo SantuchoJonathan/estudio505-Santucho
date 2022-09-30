@@ -25,6 +25,13 @@
 
     .contacto_datos {
         font-size: 15px;
+
+        .contacto_diseño {
+            img {
+                width: 100%;
+
+            }
+        }
     }
 
     .logoWp_contacto {
@@ -57,6 +64,13 @@
 
     .contacto_datos {
         font-size: 13px;
+
+        .contacto_diseño {
+            img {
+                width: 80%;
+
+            }
+        }
     }
 
     .logoWp_contacto {
@@ -69,21 +83,27 @@
 @media screen and (min-width:1001px) {
 
     .carousel {
-        width: 90%;
+        width: 80%;
 
         img.d-block {
-            height: 300px;
+            height: 550px;
         }
     }
 
     .redes {
         i {
-            font-size: 1.0rem;
+            font-size: 1.2rem;
         }
     }
 
     .contacto_datos {
         font-size: 15px;
+        .contacto_diseño {
+            img {
+                width: 80%;
+            }
+        }
+
     }
 
     .logoWp_contacto {
