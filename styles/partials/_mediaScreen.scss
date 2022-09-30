@@ -1,0 +1,54 @@
+@media screen and (max-width:400px) {
+
+    body {
+        font-size: 80%;
+    }
+
+    .contacto_datos{
+        font-size: 15px;
+    }
+
+    .carousel {
+        margin: auto;
+        width: 100%;
+
+        img {
+            height: 300px;
+        }
+    }
+
+    span {
+        display: none;
+    }
+
+    .redes {
+        i {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:1000px) {
+
+    .redes {
+        i {
+            font-size: 1.0rem;
+        }
+    }
+
+    .carousel {
+        width: 90%;
+
+        img.d-block {
+            height: 300px;
+        }
+    }
+
+    .contacto_datos {
+        font-size: 13px;
+    }
+
+    span {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    background-image: map-get($colores, background_footer);
+    color: map-get($colores, color_letras);
+}
+
+.redes {
+    @extend %flex_row;
+
+    i {
+        font-size: 1.5rem;
+
+        &:hover {
+            @extend %hover_barra_contacto;
+        }
+    }
+}
