@@ -148,6 +148,7 @@ main {
 
     .contacto_texto {
         font-family: map-get($font, font_texto_contacto);
+        text-align: justify;
     }
 
     .contacto_diseño {
@@ -164,7 +165,7 @@ main {
 
 form {
 
-    padding: 10px;
+    padding: 30px;
     background-color: rgba(122, 120, 29, 0.788);
     border-radius: 5px;
 
