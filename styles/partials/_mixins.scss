@@ -3,7 +3,9 @@
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-delay: $tiempo;
-};
+}
+
+;
 
 @mixin animation_index {
     animation-name: wp;
@@ -11,4 +13,14 @@
     animation-timing-function: in;
     animation-duration: 2s;
     animation-delay: 2s;
+}
+
+;
+
+@mixin animation_title {
+    animation-name: titulo_h1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: steps(12);
 }

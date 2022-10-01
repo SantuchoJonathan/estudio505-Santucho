@@ -3,6 +3,7 @@ $colores: (
     background_communicate: linear-gradient(to top, rgba(151, 151, 9, 0.452), black),
     background_nav: linear-gradient(to bottom, rgba(151, 151, 9, 0.452), black),
     background_btn: rgb(221, 218, 23),
+    background_titulo: linear-gradient(to bottom, yellow, black, yellow),
     background_footer: linear-gradient(to left, rgba(151, 151, 9, 0.452), black),
     color_letras: rgb(250, 250, 250),
     color_letras_communicate: rgb(255, 255, 255),
@@ -12,6 +13,7 @@ $colores: (
 
 $font: (
     font_barra_navegacion: ('Lato', sans-serif),
+    font_titulo: ('Courier New', Courier, monospace),
     font_titulo_servicios: ('Aref Ruqaa Ink', serif),
-    font_texto_contacto: (cursive),
+    font_texto_contacto: ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif),
 );

@@ -2,6 +2,41 @@ main {
     margin-top: 5px;
 }
 
+.titulo_principal {
+    display: table;
+    margin: auto;
+
+    h1 {
+        background-image: map-get($colores, background_titulo);
+        color: white;
+        font-family: map-get($font , font_titulo);
+        font-weight: bolder;
+        padding: 0px 10px;
+        float: left;
+        position: relative;
+
+        em {
+            position: absolute;
+            right: 0;
+            width: 0;
+            border-left: 1px solid black;
+            background-color: white;
+
+            @include animation_title;
+
+            @keyframes titulo_h1 {
+                0% {
+                    width: 100%;
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+        }
+    }
+}
+
 .servicios {
     h4 {
         font-family: map-get($font, font_titulo_servicios);
@@ -25,7 +60,7 @@ main {
 }
 
 .clientes {
-    background-color: rgba(128, 128, 128, 0.37);
+    background-image: map-get($colores, background_header);
     min-height: 8em;
 
     .logo_clientes {
@@ -36,7 +71,7 @@ main {
         border-radius: 10px;
         width: 4cm;
         height: 2cm;
-        padding-bottom: 10px;
+        padding: 5px;
     }
 }
 
@@ -44,13 +79,13 @@ main {
 
     i {
         position: fixed;
-        bottom: 7%;
+        bottom: 5%;
         right: 1%;
         font-size: 3em;
         color: white;
         background-color: rgb(73, 199, 42);
-        border-radius: 12px;
-        padding: 3px 10px;
+        border-radius: 50%;
+        padding: 10px 10px;
 
         @include animation_index;
 
@@ -119,7 +154,7 @@ main {
 
         width: 100%;
         text-align: center;
-  
+
         img {
             width: 70%;
             height: 14.5rem;
@@ -128,8 +163,21 @@ main {
 }
 
 form {
+
+    padding: 10px;
+    background-color: rgba(122, 120, 29, 0.788);
+    border-radius: 5px;
+
     .form_campo {
         width: 100%;
         text-align: start;
+    }
+}
+
+fieldset {
+    .btn {
+        background-color: rgb(85, 84, 19);
+        color: white;
+        border-bottom: 5px solid rgb(63, 62, 14);
     }
 }

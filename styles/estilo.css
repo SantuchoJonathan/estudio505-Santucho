@@ -74,6 +74,53 @@ main {
   margin-top: 5px;
 }
 
+.titulo_principal {
+  display: table;
+  margin: auto;
+}
+.titulo_principal h1 {
+  background-image: linear-gradient(to bottom, yellow, black, yellow);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  padding: 0px 10px;
+  float: left;
+  position: relative;
+}
+.titulo_principal h1 em {
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 1px solid black;
+  background-color: white;
+  -webkit-animation-name: titulo_h1;
+          animation-name: titulo_h1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: steps(12);
+          animation-timing-function: steps(12);
+}
+@-webkit-keyframes titulo_h1 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes titulo_h1 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 .servicios h4 {
   font-family: "Aref Ruqaa Ink", serif;
   text-decoration: underline;
@@ -108,25 +155,25 @@ main {
 }
 
 .clientes {
-  background-color: rgba(128, 128, 128, 0.37);
+  background-image: linear-gradient(to left, black, rgba(175, 175, 18, 0.842), black);
   min-height: 8em;
 }
 .clientes img {
   border-radius: 10px;
   width: 4cm;
   height: 2cm;
-  padding-bottom: 10px;
+  padding: 5px;
 }
 
 .logoWp_contacto i {
   position: fixed;
-  bottom: 7%;
+  bottom: 5%;
   right: 1%;
   font-size: 3em;
   color: white;
   background-color: rgb(73, 199, 42);
-  border-radius: 12px;
-  padding: 3px 10px;
+  border-radius: 50%;
+  padding: 10px 10px;
   -webkit-animation-name: wp;
           animation-name: wp;
   -webkit-animation-iteration-count: infinite;
@@ -215,7 +262,7 @@ main {
   font-weight: bolder;
 }
 .contacto_datos .contacto_texto {
-  font-family: cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .contacto_datos .contacto_diseño {
   width: 100%;
@@ -226,9 +273,20 @@ main {
   height: 14.5rem;
 }
 
+form {
+  padding: 10px;
+  background-color: rgba(122, 120, 29, 0.788);
+  border-radius: 5px;
+}
 form .form_campo {
   width: 100%;
   text-align: start;
+}
+
+fieldset .btn {
+  background-color: rgb(85, 84, 19);
+  color: white;
+  border-bottom: 5px solid rgb(63, 62, 14);
 }
 
 .footer {
@@ -304,6 +362,7 @@ form .form_campo {
   }
   .contacto_datos .contacto_diseño img {
     width: 80%;
+    margin-bottom: 5px;
   }
   .logoWp_contacto i {
     font-size: 2.3em;
