@@ -1,0 +1,27 @@
+header {
+    background-image: map-get($colores, background_header);
+}
+
+.carousel {
+    margin: auto;
+    width: 80%;
+
+    img {
+        width: 100%;
+        margin: auto;
+        height: 600px;
+    }
+}
+
+.communicate {
+    @extend %flex_row;
+    padding: 10px;
+    background-image: map-get($colores, background_communicate);
+    font-family: map-get($font, font_barra_navegacion);
+
+    a {
+        color: map-get($colores, color_letras_communicate);
+        text-decoration: none;
+
+    }
+}

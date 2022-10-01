@@ -1,162 +1,311 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo_clientes img {
-    border-radius: 10px;
-    width: 4cm;
-    height: 2cm;
+.redes, .clientes .logo_clientes, .communicate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes i:hover {
+  color: black;
+  transform: scale(2, 2);
+}
+
+.galeria_fotos img:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+header {
+  background-image: linear-gradient(to left, black, rgba(175, 175, 18, 0.842), black);
+}
+
+.carousel {
+  margin: auto;
+  width: 80%;
+}
+.carousel img {
+  width: 100%;
+  margin: auto;
+  height: 600px;
+}
+
+.communicate {
+  padding: 10px;
+  background-image: linear-gradient(to top, rgba(151, 151, 9, 0.452), black);
+  font-family: "Lato", sans-serif;
+}
+.communicate a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 0rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(151, 151, 9, 0.452), black);
+  font-family: "Lato", sans-serif;
+}
+.navbar a {
+  color: white;
+}
+.navbar .btn {
+  background-color: rgb(221, 218, 23);
+  color: black;
+  box-shadow: 0px 15px 25px;
+  border: solid black 1px;
+}
+.navbar .navbar-toggler {
+  background-color: rgba(163, 163, 10, 0.678);
+  border-bottom: solid 2px rgba(212, 212, 5, 0.788);
 }
 
 main {
-    margin-top: 2.2cm;
+  margin-top: 5px;
 }
 
-.titulo_principal {
-    animation-name: titulo;
-    animation-timing-function: ease-out;
-    animation-duration: 1s;
-    animation-iteration-count:2;
-    animation-delay: 0;
+.servicios h4 {
+  font-family: "Aref Ruqaa Ink", serif;
+  text-decoration: underline;
 }
 
-@keyframes titulo {
-    10% {
-        transform: scale(0.4);
-    }
-
-    50% {
-        transform: scale(0.9);
-    }
-
-    75% {
-        transform: scale(1.4);
-    }
+.impresiones,
+.diseño_grafico {
+  -webkit-animation-name: animar1;
+          animation-name: animar1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+@-webkit-keyframes animar1 {
+  0% {
+    transform: scale(0.6, 0.6);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes animar1 {
+  0% {
+    transform: scale(0.6, 0.6);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
 }
 
-.presentacion_servicios p,
-.presentacion_servicios h2 {
-    font-size: 2em;
-    width: 90%;
-    text-shadow: 1px 1px 2px white, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(201, 201, 243);
+.clientes {
+  background-color: rgba(128, 128, 128, 0.37);
+  min-height: 8em;
+}
+.clientes img {
+  border-radius: 10px;
+  width: 4cm;
+  height: 2cm;
+  padding-bottom: 10px;
 }
 
-.impresiones img,
-.impresiones h3,
-.impresiones p {
-    animation-name: animar3;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
+.logoWp_contacto i {
+  position: fixed;
+  bottom: 7%;
+  right: 1%;
+  font-size: 3em;
+  color: white;
+  background-color: rgb(73, 199, 42);
+  border-radius: 12px;
+  padding: 3px 10px;
+  -webkit-animation-name: wp;
+          animation-name: wp;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: in;
+          animation-timing-function: in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
-
-@keyframes animar3 {
-    0% {
-        transform: translateX(-50px);
-    }
+@-webkit-keyframes wp {
+  50% {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(48, 158, 21);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
 }
-
-.diseño_grafico img,
-.diseño_grafico h3,
-.diseño_grafico p {
-    animation-name: animar4;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-}
-
-@keyframes animar4 {
-    0% {
-        transform: translateX(50px);
-    }
+@keyframes wp {
+  50% {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(48, 158, 21);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 .articulo_servicio img {
-    animation-name: animar;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
+  -webkit-animation-name: animar;
+          animation-name: animar;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  transition: all 2s;
 }
-
+@-webkit-keyframes animar {
+  0% {
+    transform: translateY(-40px);
+  }
+}
 @keyframes animar {
-    0% {
-        transform: translateY(-40px);
-    }
+  0% {
+    transform: translateY(-40px);
+  }
 }
 
 .articulo_servicio h4,
 .articulo_servicio p,
 .articulo_servicio li {
-    animation-name: animar2;
-    animation-duration: 2s;
+  -webkit-animation-name: animar2;
+          animation-name: animar2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
-
+@-webkit-keyframes animar2 {
+  0% {
+    transform: translateY(40px);
+  }
+}
 @keyframes animar2 {
-    0% {
-        transform: translateY(40px);
-    }
+  0% {
+    transform: translateY(40px);
+  }
 }
 
 .galeria_fotos img {
-    width: 100%;
-    height: 400px;
-    padding: 15px;
-    box-shadow: 0px 15px 25px;
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+  box-shadow: 0px 0px 25px;
 }
-
-.galeria_fotos img:hover {
-    border: solid 5px rgb(253, 252, 251);
-    cursor: pointer;
-}
-
 .contacto_datos {
-    font-size: x-large;
+  font-size: x-large;
+}
+.contacto_datos .contacto_importante {
+  font-weight: bolder;
+}
+.contacto_datos .contacto_texto {
+  font-family: cursive;
+}
+.contacto_datos .contacto_diseño {
+  width: 100%;
+  text-align: center;
+}
+.contacto_datos .contacto_diseño img {
+  width: 70%;
+  height: 14.5rem;
 }
 
-.contacto_importante {
-    font-weight: bolder;
+form .form_campo {
+  width: 100%;
+  text-align: start;
 }
 
-.contacto_texto {
-    font-style: oblique;
+.footer {
+  background-image: linear-gradient(to left, rgba(151, 151, 9, 0.452), black);
+  color: rgb(250, 250, 250);
 }
 
-.identificacion {
+.redes i {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 80%;
+  }
+  .carousel {
+    margin: auto;
     width: 100%;
-    text-align: start;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  span {
+    display: none;
+  }
+  .redes i {
+    font-size: 0.8rem;
+  }
+  .contacto_datos {
+    font-size: 15px;
+  }
+  .contacto_datos .contacto_diseño img {
+    width: 100%;
+  }
+  .logoWp_contacto i {
+    font-size: 2em;
+  }
 }
-
-@media screen and (max-width:400px) {
-
-    .presentacion_servicios h2,
-    .contacto_datos,
-    h2 {
-        font-size: 15px;
-    }
-
-    .presentacion_servicios a,
-    .presentacion_servicios p
-    {
-        font-size: 13px ;
-    }
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+  .carousel {
+    width: 90%;
+  }
+  .carousel img.d-block {
+    height: 300px;
+  }
+  span {
+    display: none;
+  }
+  .redes i {
+    font-size: 1rem;
+  }
+  .contacto_datos {
+    font-size: 13px;
+  }
+  .contacto_datos .contacto_diseño img {
+    width: 80%;
+  }
+  .logoWp_contacto i {
+    font-size: 2.1em;
+  }
 }
-
-@media screen and (min-width:401px) and (max-width:650px) {
-
-    .presentacion_servicios h2,
-    .presentacion_servicios a,
-    .presentacion_servicios p,
-    .contacto_datos {
-        font-size: 17px;
-    }
-}
-
-@media screen and (min-width:651px) and (max-width:1000px) {
-
-    .presentacion_servicios h2,
-    .presentacion_servicios a,
-    .presentacion_servicios p {
-        font-size: 25px;
-    }
-}
+@media screen and (min-width: 1001px) {
+  .carousel {
+    width: 80%;
+  }
+  .carousel img.d-block {
+    height: 550px;
+  }
+  .redes i {
+    font-size: 1.2rem;
+  }
+  .contacto_datos {
+    font-size: 15px;
+  }
+  .contacto_datos .contacto_diseño img {
+    width: 80%;
+  }
+  .logoWp_contacto i {
+    font-size: 2.3em;
+  }
+}/*# sourceMappingURL=estilo.css.map */

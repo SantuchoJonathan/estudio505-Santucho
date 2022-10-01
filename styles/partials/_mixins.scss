@@ -1,0 +1,14 @@
+@mixin animation ($name, $tiempo) {
+    animation-name: $name;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: $tiempo;
+};
+
+@mixin animation_index {
+    animation-name: wp;
+    animation-iteration-count: infinite;
+    animation-timing-function: in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}

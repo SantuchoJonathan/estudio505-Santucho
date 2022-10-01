@@ -1,0 +1,114 @@
+@media screen and (max-width:400px) {
+
+    body {
+        font-size: 80%;
+    }
+
+    .carousel {
+        margin: auto;
+        width: 100%;
+
+        img {
+            height: 300px;
+        }
+    }
+
+    span {
+        display: none;
+    }
+
+    .redes {
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    .contacto_datos {
+        font-size: 15px;
+
+        .contacto_diseño {
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .logoWp_contacto {
+
+        i {
+            font-size: 2em;
+        }
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:1000px) {
+
+    .carousel {
+        width: 90%;
+
+        img.d-block {
+            height: 300px;
+        }
+    }
+
+    span {
+        display: none;
+    }
+
+    .redes {
+        i {
+            font-size: 1.0rem;
+        }
+    }
+
+    .contacto_datos {
+        font-size: 13px;
+
+        .contacto_diseño {
+            img {
+                width: 80%;
+
+            }
+        }
+    }
+
+    .logoWp_contacto {
+        i {
+            font-size: 2.1em;
+        }
+    }
+}
+
+@media screen and (min-width:1001px) {
+
+    .carousel {
+        width: 80%;
+
+        img.d-block {
+            height: 550px;
+        }
+    }
+
+    .redes {
+        i {
+            font-size: 1.2rem;
+        }
+    }
+
+    .contacto_datos {
+        font-size: 15px;
+        .contacto_diseño {
+            img {
+                width: 80%;
+            }
+        }
+
+    }
+
+    .logoWp_contacto {
+        i {
+            font-size: 2.3em;
+        }
+    }
+}
