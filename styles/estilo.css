@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 80.5%;
+}
+
 .redes, .clientes .logo_clientes, .communicate {
   display: flex;
   flex-direction: row;
@@ -29,12 +33,11 @@ header {
 
 .carousel {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 .carousel img {
-  width: 100%;
+  width: 80%;
   margin: auto;
-  height: 600px;
 }
 
 .communicate {
@@ -167,7 +170,7 @@ main {
 
 .logoWp_contacto i {
   position: fixed;
-  bottom: 5%;
+  bottom: 7%;
   right: 1%;
   font-size: 3em;
   color: white;
