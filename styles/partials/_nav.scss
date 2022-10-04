@@ -5,6 +5,7 @@
     height: 100%;
     background-image: map-get($colores, background_nav);
     font-family: map-get($font, font_barra_navegacion);
+    z-index: 50;
 
     a {
         color: white;
