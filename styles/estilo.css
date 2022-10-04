@@ -36,7 +36,7 @@ header {
   width: 100%;
 }
 .carousel img {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -256,7 +256,8 @@ main {
   width: 100%;
   height: 400px;
   padding: 15px;
-  box-shadow: 0px 0px 25px;
+  box-shadow: 1px 10px 15px;
+  transition: all 500ms;
 }
 .contacto_datos {
   font-size: x-large;
@@ -301,7 +302,7 @@ fieldset .btn {
 .redes i {
   font-size: 1.5rem;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 80%;
   }
@@ -310,7 +311,8 @@ fieldset .btn {
     width: 100%;
   }
   .carousel img {
-    height: 300px;
+    width: 100%;
+    height: 270px !important;
   }
   span {
     display: none;
@@ -331,12 +333,13 @@ fieldset .btn {
     font-size: 2em;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .carousel {
     width: 90%;
   }
-  .carousel img.d-block {
-    height: 300px;
+  .carousel img {
+    width: 100%;
+    height: 450px !important;
   }
   span {
     display: none;
@@ -356,10 +359,7 @@ fieldset .btn {
 }
 @media screen and (min-width: 1001px) {
   .carousel {
-    width: 80%;
-  }
-  .carousel img.d-block {
-    height: 550px;
+    width: 90%;
   }
   .redes i {
     font-size: 1.2rem;
