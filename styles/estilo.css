@@ -169,6 +169,9 @@ main {
   padding: 5px;
 }
 
+.logoWp_contacto {
+  box-sizing: border-box;
+}
 .logoWp_contacto i {
   position: fixed;
   bottom: 7%;
@@ -326,8 +329,8 @@ fieldset .btn {
     font-size: 0.8rem;
   }
   .galeria_fotos a img {
-    width: 70%;
-    height: 250px;
+    width: 80%;
+    height: 280px;
   }
   .contacto_datos {
     font-size: 15px;
