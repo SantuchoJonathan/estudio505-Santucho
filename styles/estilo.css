@@ -169,9 +169,6 @@ main {
   padding: 5px;
 }
 
-.logoWp_contacto {
-  box-sizing: border-box;
-}
 .logoWp_contacto i {
   position: fixed;
   bottom: 7%;
@@ -181,6 +178,7 @@ main {
   background-color: rgb(73, 199, 42);
   border-radius: 50%;
   padding: 10px 10px;
+  z-index: 50;
   -webkit-animation-name: wp;
           animation-name: wp;
   -webkit-animation-iteration-count: infinite;
@@ -212,6 +210,7 @@ main {
 }
 
 .articulo_servicio img {
+  border-radius: 5px;
   -webkit-animation-name: animar;
           animation-name: animar;
   -webkit-animation-duration: 5s;
@@ -312,7 +311,7 @@ fieldset .btn {
 }
 @media screen and (max-width: 600px) {
   body {
-    font-size: 85%;
+    font-size: 100%;
   }
   .carousel {
     margin: auto;
@@ -326,11 +325,16 @@ fieldset .btn {
     display: none;
   }
   .redes i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .articulo_servicio {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
   }
   .galeria_fotos a img {
     width: 80%;
-    height: 280px;
+    height: 300px;
   }
   .contacto_datos {
     font-size: 15px;

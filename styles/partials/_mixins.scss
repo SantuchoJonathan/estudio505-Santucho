@@ -3,19 +3,15 @@
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-delay: $tiempo;
-}
+};
 
-;
-
-@mixin animation_index {
+@mixin animation_whattsap {
     animation-name: wp;
     animation-iteration-count: infinite;
     animation-timing-function: in;
     animation-duration: 2s;
     animation-delay: 2s;
-}
-
-;
+};
 
 @mixin animation_title {
     animation-name: titulo_h1;

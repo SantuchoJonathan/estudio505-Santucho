@@ -1,7 +1,7 @@
 .footer {
     background-image: map-get($colores, background_footer);
     color: map-get($colores, color_letras);
-}
+ }
 
 .redes {
     @extend %flex_row;
