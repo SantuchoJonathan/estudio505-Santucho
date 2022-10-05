@@ -1,7 +1,7 @@
 @media screen and (max-width:600px) {
 
     body {
-        font-size: 80%;
+        font-size: 100%;
     }
 
     .carousel {
@@ -20,7 +20,22 @@
 
     .redes {
         i {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .articulo_servicio {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .galeria_fotos {
+        a {
+            img {
+                width: 80%;
+                height: 300px;
+            }
         }
     }
 
