@@ -1,16 +1,26 @@
 .footer {
     background-image: map-get($colores, background_footer);
     color: map-get($colores, color_letras);
- }
+    text-align: center;
 
-.redes {
-    @extend %flex_row;
+    .footer_division {
+        border-bottom: solid 3px white;
+    }
 
-    i {
-        font-size: 1.5rem;
+    .redes {
+        @extend %flex_row;
 
-        &:hover {
-            @extend %hover_barra_contacto;
+        i {
+            font-size: 1.4rem;
+
+            &:hover {
+                @extend %hover_barra_contacto;
+            }
         }
+
+    }
+
+    .copryght {
+        background-color: black;
     }
 }
