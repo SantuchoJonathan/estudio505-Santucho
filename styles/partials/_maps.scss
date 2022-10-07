@@ -14,6 +14,12 @@ $colores: (
 $font: (
     font_barra_navegacion: ('Lato', sans-serif),
     font_titulo: ('Courier New', Courier, monospace),
-    font_titulo_servicios: ('Aref Ruqaa Ink', serif),
+    font_titulo_servicios: (Gotham),
     font_texto_contacto: ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif),
+    font_titulo_paginas: ('Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif),
 );
+
+@font-face {
+    font-family: Gotham;
+    src: url('Gotham.otf') format('PostScript');
+}

@@ -9,7 +9,7 @@ html {
   font-size: 80.5%;
 }
 
-.redes, .clientes .logo_clientes, .communicate {
+.footer .redes, .clientes .logo_clientes, .communicate {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@ html {
   align-items: center;
 }
 
-.redes i:hover {
+.footer .redes i:hover {
   color: black;
   transform: scale(2, 2);
 }
@@ -27,6 +27,10 @@ html {
   transform: scale(1.1, 1.1);
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url("Gotham.otf") format("PostScript");
+}
 header {
   background-image: linear-gradient(to left, black, rgba(175, 175, 18, 0.842), black);
 }
@@ -125,8 +129,13 @@ main {
   }
 }
 
-.servicios h4 {
-  font-family: "Aref Ruqaa Ink", serif;
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h3,
+h4 {
+  font-family: Gotham;
   text-decoration: underline;
 }
 
@@ -304,11 +313,18 @@ fieldset .btn {
 .footer {
   background-image: linear-gradient(to left, rgba(151, 151, 9, 0.452), black);
   color: rgb(250, 250, 250);
+  text-align: center;
+}
+.footer .footer_division {
+  border-bottom: solid 3px white;
+}
+.footer .redes i {
+  font-size: 1.4rem;
+}
+.footer .copryght {
+  background-color: black;
 }
 
-.redes i {
-  font-size: 1.5rem;
-}
 @media screen and (max-width: 600px) {
   body {
     font-size: 100%;

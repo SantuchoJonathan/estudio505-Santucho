@@ -37,12 +37,16 @@ main {
     }
 }
 
-.servicios {
-    h4 {
+h2{
+    font-family: map-get($font , font_titulo_paginas);
+}
+
+h3,
+h4 {
         font-family: map-get($font, font_titulo_servicios);
         text-decoration: underline;
     }
-}
+
 
 .impresiones,
 .diseño_grafico {
@@ -191,3 +195,4 @@ fieldset {
         border-bottom: 5px solid rgb(63, 62, 14);
     }
 }
+
