@@ -82,6 +82,7 @@ main {
   margin-top: 5px;
 }
 
+/*Pagina "INDEX"*/
 .titulo_principal {
   display: table;
   margin: auto;
@@ -178,6 +179,7 @@ h4 {
   padding: 5px;
 }
 
+/*Logo "WP" en todas las paginas*/
 .logoWp_contacto i {
   position: fixed;
   bottom: 7%;
@@ -218,6 +220,7 @@ h4 {
   }
 }
 
+/*Pagina "SERVICIOS"*/
 .articulo_servicio img {
   border-radius: 5px;
   -webkit-animation-name: animar;
@@ -264,6 +267,62 @@ h4 {
   }
 }
 
+/*Pagina "NOSOTROS"*/
+.mision,
+.vision,
+.valores {
+  min-height: 8rem;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px;
+  margin-bottom: 8px;
+  transition: all 0.8s;
+  -webkit-animation-name: animation-mision;
+          animation-name: animation-mision;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes animation-mision {
+  5% {
+    border-top: solid 1px rgb(160, 160, 7);
+  }
+  30% {
+    border-right: solid 1px rgb(160, 160, 7);
+  }
+  60% {
+    border-bottom: solid 1px rgb(160, 160, 7);
+  }
+  100% {
+    border-left: solid 1px rgb(160, 160, 7);
+  }
+}
+@keyframes animation-mision {
+  5% {
+    border-top: solid 1px rgb(160, 160, 7);
+  }
+  30% {
+    border-right: solid 1px rgb(160, 160, 7);
+  }
+  60% {
+    border-bottom: solid 1px rgb(160, 160, 7);
+  }
+  100% {
+    border-left: solid 1px rgb(160, 160, 7);
+  }
+}
+.mision:hover,
+.vision:hover,
+.valores:hover {
+  background-image: linear-gradient(to left, black, rgba(175, 175, 18, 0.842), black);
+  color: white;
+  cursor: text;
+}
+
+/*Pagina "GALERIA"*/
 .galeria_fotos a {
   color: black;
 }
@@ -275,6 +334,7 @@ h4 {
   border-radius: 5px;
   transition: all 500ms;
 }
+/*Pagina "CONTACTO"*/
 .contacto_datos {
   font-size: x-large;
 }
@@ -400,7 +460,7 @@ fieldset .btn {
     font-size: 15px;
   }
   .contacto_datos .contacto_diseño img {
-    width: 80%;
+    width: 60%;
     margin-bottom: 5px;
   }
   .logoWp_contacto i {

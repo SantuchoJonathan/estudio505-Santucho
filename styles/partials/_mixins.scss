@@ -26,3 +26,10 @@
 }
 
 ;
+
+@mixin animation-mision {
+    animation-name: animation-mision;
+    animation-iteration-count: infinite;
+    animation-direction:normal ;
+    animation-duration: 2s;
+}
