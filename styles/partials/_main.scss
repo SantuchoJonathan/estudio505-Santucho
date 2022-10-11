@@ -2,6 +2,7 @@ main {
     margin-top: 5px;
 }
 
+/*Pagina "INDEX"*/
 .titulo_principal {
     display: table;
     margin: auto;
@@ -37,15 +38,15 @@ main {
     }
 }
 
-h2{
+h2 {
     font-family: map-get($font , font_titulo_paginas);
 }
 
 h3,
 h4 {
-        font-family: map-get($font, font_titulo_servicios);
-        text-decoration: underline;
-    }
+    font-family: map-get($font, font_titulo_servicios);
+    text-decoration: underline;
+}
 
 
 .impresiones,
@@ -79,6 +80,7 @@ h4 {
     }
 }
 
+/*Logo "WP" en todas las paginas*/
 .logoWp_contacto {
 
     i {
@@ -107,6 +109,7 @@ h4 {
     }
 }
 
+/*Pagina "SERVICIOS"*/
 .articulo_servicio img {
     border-radius: 5px;
     @include animation (animar, 0s);
@@ -131,6 +134,47 @@ h4 {
     }
 }
 
+/*Pagina "NOSOTROS"*/
+.mision,
+.vision,
+.valores {
+    min-height: 8rem;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px;
+    margin-bottom: 8px;
+    transition: all 0.8s;
+
+    @include animation-mision;
+
+    @keyframes animation-mision {
+        5% {
+            border-top: solid 1px rgb(160, 160, 7);
+        };
+
+        30% {
+            border-right: solid 1px rgb(160, 160, 7);
+        };
+
+        60% {
+            border-bottom: solid 1px rgb(160, 160, 7);
+        };
+
+        100% {
+            border-left: solid 1px rgb(160, 160, 7);
+        }
+    }
+
+
+    &:hover {
+        background-image: map-get($colores, background_header);
+        color: white;
+        cursor: text;
+    }
+}
+
+
+/*Pagina "GALERIA"*/
 .galeria_fotos {
 
     a {
@@ -152,6 +196,7 @@ h4 {
     }
 }
 
+/*Pagina "CONTACTO"*/
 .contacto_datos {
     font-size: x-large;
 
@@ -195,4 +240,3 @@ fieldset {
         border-bottom: 5px solid rgb(63, 62, 14);
     }
 }
-
