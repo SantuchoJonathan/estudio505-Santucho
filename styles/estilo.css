@@ -52,6 +52,10 @@ header {
 .communicate a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: all 500ms;
+}
+.communicate a:hover {
+  transform: scale(1.1);
 }
 
 .navbar {
@@ -235,12 +239,12 @@ h4 {
 }
 @-webkit-keyframes animar {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-10px);
   }
 }
 @keyframes animar {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-10px);
   }
 }
 

@@ -21,6 +21,12 @@ header {
     a {
         color: map-get($colores, color_letras_communicate);
         text-decoration: none;
+        transition: all 500ms;
+
+        &:hover {
+            transform: scale(1.1);
+ 
+        }
 
     }
 }

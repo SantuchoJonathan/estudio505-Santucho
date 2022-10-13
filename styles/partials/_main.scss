@@ -48,7 +48,6 @@ h4 {
     text-decoration: underline;
 }
 
-
 .impresiones,
 .diseño_grafico {
     @include animation (animar1, 0s);
@@ -79,6 +78,7 @@ h4 {
         padding: 5px;
     }
 }
+
 
 /*Logo "WP" en todas las paginas*/
 .logoWp_contacto {
@@ -117,7 +117,7 @@ h4 {
 
     @keyframes animar {
         0% {
-            transform: translateY(-40px);
+            transform: translateY(-10px);
         }
     }
 }
@@ -150,15 +150,21 @@ h4 {
     @keyframes animation-mision {
         5% {
             border-top: solid 1px rgb(160, 160, 7);
-        };
+        }
+
+        ;
 
         30% {
             border-right: solid 1px rgb(160, 160, 7);
-        };
+        }
+
+        ;
 
         60% {
             border-bottom: solid 1px rgb(160, 160, 7);
-        };
+        }
+
+        ;
 
         100% {
             border-left: solid 1px rgb(160, 160, 7);
